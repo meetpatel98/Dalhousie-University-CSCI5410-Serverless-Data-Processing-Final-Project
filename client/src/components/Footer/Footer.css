@@ -1,0 +1,16 @@
+.footer{
+    position: absolute;
+    transform: translate(0, 360%);
+    width: 100%;
+}
+
+#navbar{
+    margin-left: 46%;
+}
+
+.chatbot{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10%;
+}

@@ -1,0 +1,5 @@
+GET_AVAILABLE_ROOMS_ROUTE = '/get_available_rooms'
+BOOK_ROOM_ROUTE = '/book_room'
+GET_BOOKING_DETAILS = '/get_booking_details'
+POST_HOTEL_FEEDBACK = '/post_hotel_feedback'
+GET_FEEDBACKS = '/get_feedbacks'

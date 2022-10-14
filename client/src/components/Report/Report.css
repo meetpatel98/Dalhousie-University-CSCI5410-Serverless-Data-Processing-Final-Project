@@ -1,0 +1,13 @@
+.graph{
+   margin-right: 10%;
+   margin-left: 10%;
+}
+
+.statsButton{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    margin: 2%;
+}

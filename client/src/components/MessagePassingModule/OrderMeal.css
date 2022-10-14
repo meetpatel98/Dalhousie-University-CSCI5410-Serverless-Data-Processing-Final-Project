@@ -1,0 +1,14 @@
+.order-meal{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.radio-btn{
+    border: 0px;
+    width: 50%;
+    height: 1em;
+}
+
+.submit-btn{
+    margin-top: 5%;
+}

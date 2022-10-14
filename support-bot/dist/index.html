@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <!-- Font Dependencies -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Vuetify CSS Dependencies -->
+    <link href="https://unpkg.com/vuetify@0.16.9/dist/vuetify.min.css" rel="stylesheet" type="text/css">
+
+    <!-- LexWebUi CSS from dist directory -->
+    <link href="./lex-web-ui.min.css" rel="stylesheet" type="text/css">
+    <!-- page specific LexWebUi styling -->
+    <style type="text/css">
+      #lex-web-ui-app { display: flex; height: 100%; width: 100%; }
+      body, html { overflow-y: auto; overflow-x: hidden; }
+    </style>
+  </head>
+  <body>
+    <!-- application will be dynamically mounted here -->
+    <div id="lex-web-ui"></div>
+
+    <!--
+      Vue, Vuex, Vuetifiy and AWS SDK dependencies must be loaded before lex-web-ui.js.
+      Loading from third party CDN for quick testing
+    -->
+    <script src="https://unpkg.com/vue@2.5.3"></script>
+    <script src="https://unpkg.com/vuex@3.0.1"></script>
+    <script src="https://unpkg.com/vuetify@0.16.9"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.149.0.min.js"></script>
+
+    <!-- LexWebUi Library from dist directory -->
+    <script src="./lex-web-ui.js"></script>
+
+    <!-- instantiate the web ui with a basic config -->
+    <script>
+      // LexWebUi supports numerous configuration options. Here
+      // is an example using just a couple of the required options.
+      var config = {
+      };
+      // load the LexWebUi component
+      var lexWebUi = new LexWebUi.Loader(config);
+      // instantiate Vue
+      new Vue({
+        el: '#lex-web-ui',
+        store: lexWebUi.store,
+        template: '<div id="lex-web-ui-app"><lex-web-ui/></div>',
+      });
+    </script>
+  </body>
+</html>

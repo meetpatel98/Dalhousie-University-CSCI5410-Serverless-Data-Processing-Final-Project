@@ -1,0 +1,24 @@
+.bookings{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hotel-bookings{
+    margin-bottom: 2%;
+}
+
+.btn-table{
+    margin-right: 5%;
+}
+
+.ordered-meals{
+    margin-top: 5%;
+}
+
+.booked-tours{
+    margin-top: 5%;
+}
+
+.btn-notifications{
+    margin-top: 2%;
+}
